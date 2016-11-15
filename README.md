@@ -1,9 +1,9 @@
 # Andela_bc_12_day_3
 ##Tasks for the day
--Andela Labs
-1. Binary search
-2. Missing number
--Front End Web
+-Andela Labs<br/>
+1. Binary search<br/>
+2. Missing number<br/>
+-Front End Web<br/>
 1.A simple front end appliaction created using CSS and HTML
 
 ##Binary search
