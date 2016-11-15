@@ -1,0 +1,102 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>eCitizen</title>
+<meta name="generator" content="user">
+<meta name="viewport" content="initial-width, user-scalable=no">
+<link rel="stylesheet" href="css/master.css">
+<link rel="shortcut icon" href="images/favicon.png">
+</head>
+<body>
+   
+   <!-- Greeting starts here -->
+
+   <div id="wb_JavaScript2" style="position:absolute;left:530px;top:10px;width:355px;height:18px;z-index:5;">
+<script type="text/javascript">
+datenow = new Date(); 
+timenow = datenow.getTime(); 
+datenow.setTime(timenow); 
+hournow = datenow.getHours(); 
+if (hournow > 18)
+{ 
+   greeting = "Good Evening!"; 
+}
+else 
+if (hournow > 12) 
+{
+   greeting = "Good Afternoon!"; 
+}
+else 
+{
+   greeting = "Good Morning !"; 
+}
+document.write("<span style='font-family:Arial;font-size:22px;color:#fff;font-weight:bold;font-style:normal;text-decoration:none;'>" + greeting + "<\/span>"); </script>
+   </div>
+
+<!-- Greeting ends here -->
+
+   
+   
+<!-- CLOCK starts here -->
+
+<div id="wb_JavaScript3" style="position:absolute;left:1100px;top:10px;width:203px;height:36px;z-index:6;">
+      <div style="color:#fff;font-size:22px;font-family:arial;font-weight:bold;font-style:normal;text-decoration:none" id="basicclock"></div>
+<script type="text/javascript">
+function clock() 
+{
+   var digital = new Date();
+   var hours = digital.getHours();
+   var minutes = digital.getMinutes();
+   var seconds = digital.getSeconds();
+   if (minutes <= 9) minutes = "0" + minutes;
+   if (seconds <= 9) seconds = "0" + seconds;
+   dispTime = hours + ":" + minutes + ":" + seconds;
+   var basicclock = document.getElementById('basicclock');
+   basicclock.innerHTML = dispTime;
+   setTimeout("clock()", 1000);
+}
+clock();
+</script>
+   </div>
+  <!-- CLOCK ends here -->
+  
+  
+  <!-- date ends here -->   
+   <div id="wb_JavaScript1" style="position:absolute;left:30px;top:10px;width:309px;height:38px;z-index:8;">
+      <div style="color:#fff;font-size:22px;font-family:arial;font-weight:bold;font-style:normal;text-decoration:none" id="basicdate"></div>
+<script type="text/javascript">
+   var now = new Date();
+   var days = new Array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+   var months = new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+   var date = ((now.getDate() < 10) ? "0" : "") + now.getDate();
+   var year = (now.getYear() < 1000) ? now.getYear() + 1900 : now.getYear();
+   today = days[now.getDay()] + ", " + months[now.getMonth()] + " " + date + ", " + year;
+   var basicdate = document.getElementById('basicdate');
+   basicdate.innerHTML = today;
+</script>
+   </div>
+ <!-- date ends here -->
+ 
+ <!-- bg -->
+   <div id="wb_MediaPlayer1" style="position:absolute;left:0px;top:0px;width:1280px;height:1024px;z-index:0;"> <img src="images/bg.png" width="1280" height="1024" alt="bg"> </div> <!-- bg -->
+ 
+<img src="images/banner-bg.jpg" width="1226" height="506" alt="banner" style="position:absolute;left:54px;top:210px;z-index:1;border:solid 1px #fff;border-radius:30px 0px 0px 30px;"> </div>
+
+<div id="login"> 
+
+<span style="position:absolute; top:15px; left:44px; font-size:34px; z-index:2;"> Log in to your account </span>
+
+<span style="position:absolute; top:90px; left:60px; font-size:20px; z-index:2;"> Email Address or ID Number </span>
+<input type="text" style="width:270px; height:30px; border:solid 1px #000; position:absolute; top:120px; left:60px;">
+
+<span style="position:absolute; top:190px; left:60px; font-size:20px; z-index:2;"> Password </span>
+<input type="text" style="width:270px; height:30px; border:solid 1px #000; position:absolute; top:220px; left:60px;"> 
+
+<a href="#"> <button style="width:90px; height:40px; border:solid 1px #000; position:absolute; font-size:20px; top:280px; left:250px;"> LOGIN </button> </a>
+
+<div style="width:340px; height:30px; position:absolute; font-size:20px; top:370px; left:30px;"> Not yet Registered? <b> <a href="#" style="background-color:#f00; padding:10px; border-radius:10px"> REGISTER NOW </a> </b> </div>
+</div>
+
+</body>
+</html>
