@@ -8,6 +8,7 @@ def find_missing(first_array, second_array):
 	second_array = set(second_array)
 	if first_array != second_array:
 		new_array = list(second_array - first_array)
-		return new_array[0]
+		for element in new_array:
+			return element
 	else:
 		return 0
