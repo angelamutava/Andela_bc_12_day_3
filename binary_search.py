@@ -27,14 +27,14 @@ class BinarySearch(list):
                output_dict['count'] +=1
            else:
                if search_element <self.list_of_numbers[midpoint]:
-                   count += 1
+                   output_dict['count'] += 1
                    first = midpoint - 1
                    output_dict['index'] = self.list_of_numbers.index(search_element)
                else:
-                   count += 1 
+                   output_dict['count'] += 1 
                    first = midpoint + 1 
                    output_dict['index'] = self.list_of_numbers.index(search_element)
-return output_dict                   
+    return output_dict                   
 
                 
 
