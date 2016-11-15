@@ -10,4 +10,4 @@ def find_missing(first_array, second_array):
 		new_array = list(second_array - first_array)
 		return new_array[0]
 	else:
-return 0
+		return 0
