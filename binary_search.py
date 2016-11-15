@@ -34,7 +34,7 @@ class BinarySearch(list):
                    output_dict['count'] += 1 
                    first = midpoint + 1 
                    output_dict['index'] = self.list_of_numbers.index(search_element)
-    return output_dict                   
+  return output_dict                   
 
                 
 
@@ -42,20 +42,4 @@ class BinarySearch(list):
 
 
 
-    while True:
-      if self.list_of_numbers[midpoint] < search_element:
-        count +=1
-        output_dict['count'] = count
-        output_dict['index'] = self.list_of_numbers.index(search_element)
-        midpoint = midpoint + 1
-      elif self.list_of_numbers[midpoint] > search_element:
-        count += 1
-        output_dict['count'] = count
-        output_dict['index'] = self.list_of_numbers.index(search_element)
-        midpoint = midpoint - 1
-      else:
-        count = 1
-        output_dict['count'] = 1
-        output_dict['index'] = self.list_of_numbers[midpoint]
-        return self.list_of_numbers[midpoint]
-    return output_dict 
+   
